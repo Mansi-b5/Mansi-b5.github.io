@@ -1,29 +1,51 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
+import person2 from "./assets/images/Hero/person2.png";
 
 import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
+import Django from "./assets/images/Skills/django.svg";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
+import aws from "./assets/images/Skills/aws.svg";
+import html from "./assets/images/Skills/html.svg";
+import css from "./assets/images/Skills/css.svg";
+import javascript from "./assets/images/Skills/javascript.svg";
+import bootstrap from "./assets/images/Skills/bootstrap.svg";
+import tailwind from "./assets/images/Skills/tailwind.svg";
+import vue from "./assets/images/Skills/vue.svg";
+import typescript from "./assets/images/Skills/typescript.svg";
 
-import services_logo1 from "./assets/images/Services/logo1.png";
-import services_logo2 from "./assets/images/Services/logo2.png";
-import services_logo3 from "./assets/images/Services/logo3.png";
+import flask from "./assets/images/Skills/flask.png";
+import php from "./assets/images/Skills/php.svg";
+import csharp from "./assets/images/Skills/csharp.svg";
+import cplusplus from "./assets/images/Skills/cplusplus.svg";
+import dotnet from "./assets/images/Skills/dotnet.svg";
+import java from "./assets/images/Skills/java.svg";
+import mysql from "./assets/images/Skills/mysql.svg";
+import Postgresql from "./assets/images/Skills/postgresql.svg";
+import mongoDB from "./assets/images/Skills/mongoDB.svg";
+import sqlite from "./assets/images/Skills/sqlite.svg";
+
+import git from "./assets/images/Skills/git.svg";
+import linux from "./assets/images/Skills/linux.svg";
+import docker from "./assets/images/Skills/docker.svg";
+import kubernetes from "./assets/images/Skills/kubernetes.svg";
+import azure from "./assets/images/Skills/azure.svg";
+import xamarin from "./assets/images/Skills/xamarin.png";
+import androidStudio from "./assets/images/Skills/android.png";
+import wordpress from "./assets/images/Skills/wordpress.svg";
+import nextJs from "./assets/images/Skills/nextJS.svg";
+import nginx from "./assets/images/Skills/nginx.svg";
+import grafana from "./assets/images/Skills/grafana.png";
+import jira from "./assets/images/Skills/jira.png";
+
 
 import project1 from "./assets/images/projects/img1.png";
 import project2 from "./assets/images/projects/img2.png";
 import project3 from "./assets/images/projects/img3.png";
-import person_project from "./assets/images/projects/person.png";
+import project4 from "./assets/images/projects/img4.png";
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
-
-import Hireme_person from "./assets/images/Hireme/person.png";
-import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -58,15 +80,15 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
-    btnText: "Hire Me",
+    title: "Software Developer",
+    firstName: "MANSI",
+    LastName: "BHARDWAJ",
+    btnText: "Contact me",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
-        text: "Years of Experinse in Web development",
+        count: "3+",
+        text: "Years of Experience in Tech",
       },
       {
         count: "20+",
@@ -74,69 +96,207 @@ export const content = {
       },
     ],
   },
+
   skills: {
     title: "Skills",
     subtitle: "MY TOP SKILLS",
-    skills_content: [
+    image: person2,
+    skills_content_front: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
-      },
-      {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
-      },
-      {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
-      },
-      {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
+        name: "React",
         logo: reactjs,
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "HTML",
+        logo: html,
+      },
+      {
+        name: "CSS",
+        logo: css,
+      },
+      {
+        name: "Bootstrap",
+        logo: bootstrap,
+      },
+      {
+        name: "Javascript",
+        logo: javascript,
+      },
+      {
+        name: "Typescript",
+        logo: typescript,
+      },      
+      {
+        name: "Vue JS",
+        logo: vue,
+      },
+
+    ],
+
+    skills_content_back:[
+      {
+        name: "Node JS",
+        logo: nodejs,
+      },
+      {
+        name: "Django",
+        logo: Django,
       },
       {
         name: "Python",
-        para: "Lorem ipsum text  dummy",
         logo: python,
       },
+      {
+        name: "Flask",
+        logo: flask,
+      },
+      {
+        name: "Java",
+        logo: java,
+      },
+      {
+        name: "MongoDb",
+        logo: mongoDB,
+      },
+      {
+        name: "MySQL",
+        logo: mysql,
+      },
+      {
+        name: "Php",
+        logo: php,
+      },
+      {
+        name: "PostgreSQL",
+        logo: Postgresql,
+      },
+      {
+        name: "sqlite",
+        logo: sqlite,
+      },
+      {
+        name: "ASP .NET",
+        logo: dotnet,
+      },
+      {
+        name: "C++",
+        logo: cplusplus,
+      },
+      {
+        name: "C#",
+        logo: csharp,
+      },
+      {
+        name: "MySQL",
+        logo: mysql,
+      },
+      {
+        name: "Php",
+        logo: php,
+      },
     ],
+
+    skills_content_tools:[
+      {
+        name: "Git",
+        logo: git,
+      },
+      {
+        name: "Jira",
+        logo: jira,
+      },
+      {
+        name: "Grafana",
+        logo: grafana,
+      },
+      {
+        name: "Figma",
+        logo: figma,
+      },
+      {
+        name: "AWS",
+        logo: aws,
+      },
+      {
+        name: "Azure",
+        logo: azure,
+      },
+      {
+        name: "Docker",
+        logo: docker,
+      },
+      {
+        name: "Kubernetes",
+        logo: kubernetes,
+      },
+      {
+        name: "Linux",
+        logo: linux,
+      },
+      {
+        name: "Next JS",
+        logo: nextJs,
+      },
+      {
+        name: "Nginx",
+        logo: nginx,
+      },
+      {
+        name: "Tailwind",
+        logo: tailwind,
+      },
+      {
+        name: "Wordpress",
+        logo: wordpress,
+      },
+      {
+        name: "Xamarin",
+        logo: xamarin,
+      },
+      {
+        name: "Android Studio",
+        logo: androidStudio,
+      },
+
+    ],
+
     icon: MdArrowForward,
   },
-  services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
-    service_content: [
-      {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
-      },
-      {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
-      },
-      {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
-      },
-    ],
-  },
+  
   Projects: {
     title: "Projects",
     subtitle: "MY CREATION",
-    image: person_project,
     project_content: [
+      {
+        title: "Buttercup Desktop",
+        image: project1,
+        link: "https://github.com/Mansi-b5/COMP-354_Project",
+      },
+      {
+        title: "Pizza Website",
+        image: project2,
+        link: "https://github.com/Mansi-b5/.Net-Consulting-Project"
+      },
+      {
+        title: "Tower Hanoi Game",
+        image: project3,
+        link: "https://github.com/Mansi-b5/COIT13229"
+      },
+      {
+        title: "Smart Farm",
+        image: project1,
+        link: "https://github.com/Mansi-b5/SmartFarm---App"
+      },
+      {
+        title: "Pizza Android App",
+        image: project2,
+        link:"https://github.com/Mansi-b5/AppDevII-Final_Project"
+      },
+      {
+        title: "AI",
+        image: project3,
+        link:"https://github.com/Klickk/AppliedAI-GroupProject"
+      },
       {
         title: "Gym Website",
         image: project1,
@@ -149,66 +309,14 @@ export const content = {
         title: "Creative Website",
         image: project3,
       },
+     
     ],
   },
-  Testimonials: {
-    title: "Testimonials",
-    subtitle: "MY CLIENT REVIEWS",
-    testimonials_content: [
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
-    ],
-  },
-  Hireme: {
-    title: "Hire Me",
-    subtitle: "FOR YOUR PROJECTS",
-    image1: Hireme_person,
-    image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-    btnText: "Hire Me",
-  },
+  
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
-    social_media: [
-      {
-        text: "codeaprogram@gmail.com",
-        icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
-      },
-      {
-        text: "+91 1234 56778",
-        icon: MdCall,
-        link: "https://wa.me/1234567890",
-      },
-      {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
-      },
-    ],
+    image: person2,
   },
   Footer: {
     text: "All © Copy Right Reserved 2022",
