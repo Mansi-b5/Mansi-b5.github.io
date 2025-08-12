@@ -279,7 +279,7 @@ export const content = {
       },
       {
         title: "Tower Hanoi Game",
-        image: project3,
+        image: project4,
         link: "https://github.com/Mansi-b5/COIT13229"
       },
       {
@@ -294,7 +294,7 @@ export const content = {
       },
       {
         title: "AI face recognition",
-        image: project3,
+        image: project4,
         link:"https://github.com/Klickk/AppliedAI-GroupProject"
       },
      
