@@ -44,7 +44,6 @@ import jira from "./assets/images/Skills/jira.png";
 import project1 from "./assets/images/projects/img1.png";
 import project2 from "./assets/images/projects/img2.png";
 import project3 from "./assets/images/projects/img3.png";
-import project4 from "./assets/images/projects/img4.png";
 
 
 // import icons from react-icons
