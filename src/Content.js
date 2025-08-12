@@ -293,21 +293,9 @@ export const content = {
         link:"https://github.com/Mansi-b5/AppDevII-Final_Project"
       },
       {
-        title: "AI",
+        title: "AI face recognition",
         image: project3,
         link:"https://github.com/Klickk/AppliedAI-GroupProject"
-      },
-      {
-        title: "Gym Website",
-        image: project1,
-      },
-      {
-        title: "Social Media web",
-        image: project2,
-      },
-      {
-        title: "Creative Website",
-        image: project3,
       },
      
     ],
