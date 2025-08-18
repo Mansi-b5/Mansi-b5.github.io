@@ -1,17 +1,18 @@
 import React from "react";
 import { content } from "../Content";
 
+
 const Projects = () => {
   const { Projects } = content;
-  return <section  id="projects">
-    <div className=" px-5 pt-14 flex flex-col justify-between py-10">
+  return <section className="" id="projects">
+    <div className="px-5 pt-14 flex flex-col justify-between py-10">
       
       <div>
         <h2 className="title aos-init aos-animate" data-aos="fade-down">{Projects.title}</h2>
         <br></br>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {Projects.project_content.map((content, i) => (
           
           <div key={i} className="min-w-[14rem] duration-300 cursor-pointer

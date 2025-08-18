@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import { content } from "../Content";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { Contact } = content;
+  const form = useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_lhkehva', 'template_jzwsav4', form.current,
+        'UH4c7sNR_NIbaOH3W',
+      )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          form.current.reset()
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+  };
+
   return <section className="bg-dark_primary text-white">
 
   <div className="md: container px-5 pt-14 py-16 ">
@@ -10,11 +32,11 @@ const Contact = () => {
     <br/>
     <div className="flex gap-20">
     
-      <form className="flex-1 flex flex-col gap-5">
+      <form ref={form} onSubmit={sendEmail} className="flex-1 flex flex-col gap-5">
         <input type="text" name="from_name"
         placeholder="Name" required className="border
         border-slate-600 p-3 rounded"/>
-        <input type="email" name="user_email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\-[A-Za-z]{1,63}$"
+        <input type="email" name="user_email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
         placeholder="Email Id" required className="border
         border-slate-600 p-3 rounded"/>
         <textarea name= "message"
